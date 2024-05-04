@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="containerGrid">
+            <div id="informationDiv">
+                <button id="numFactors" onclick="askInformation(num_factors,10)">Number of factors (-10 energy)</button>
+                <button id="numPrimeFactors" onclick="askInformation(num_prime_factors,10)">Number of prime factors (-10 energy)</button>
+                <button id="length" onclick="askInformation(length,10)">Length (-10 energy)</button>
+            </div>
+            <div></div>
+            <div id="problemDiv">
+                <p id="problem" style="font-size:30px;"></p>
+                <form id="answerForm">
+                    <input type="text" id="answerBox"></input>
+                    <button type="submit" id="answerSubmit">Submit</button>
+                </form>
+                <p id="energyDisplay">Energy: 20</p>
+            </div>
+            
+        </div>
+        <script src="script.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </body>
+</html>
